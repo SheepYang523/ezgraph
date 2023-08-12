@@ -8,6 +8,6 @@ import java.util.*;
 
 public class NodePool {
     private final HashMap<Number, Node> pool = new HashMap<>();
-
+    
 
 }
