@@ -1,6 +1,6 @@
-package com.teko.structure;
+package com.teko.ezgraph.structure;
 
-import com.teko.framework.AbstractIENode;
+import com.teko.ezgraph.framework.AbstractIENode;
 
 import java.io.Serial;
 import java.math.BigInteger;

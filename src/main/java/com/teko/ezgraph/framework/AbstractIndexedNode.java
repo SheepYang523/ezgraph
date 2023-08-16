@@ -1,6 +1,4 @@
-package com.teko.framework;
-
-import com.teko.pool.AbstractNodeFactory;
+package com.teko.ezgraph.framework;
 
 import java.io.Serial;
 import java.io.Serializable;

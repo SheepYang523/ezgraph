@@ -1,4 +1,4 @@
-package com.teko.framework;
+package com.teko.ezgraph.framework;
 
 import java.io.Serial;
 import java.io.Serializable;

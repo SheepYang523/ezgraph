@@ -1,7 +1,6 @@
-package com.teko.structure;
+package com.teko.ezgraph.structure;
 
-import com.teko.framework.AbstractIndexedNode;
-import com.teko.framework.IndexedNode;
+import com.teko.ezgraph.framework.AbstractIndexedNode;
 
 import java.io.Serial;
 

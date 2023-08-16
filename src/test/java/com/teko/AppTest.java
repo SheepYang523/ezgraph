@@ -1,17 +1,8 @@
 package com.teko;
 
-import com.teko.pool.LightNodeFactory;
-import com.teko.structure.LightNode;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import com.teko.ezgraph.pool.LightNodeFactory;
+import com.teko.ezgraph.structure.LightNode;
 import org.junit.Test;
-
-import java.io.PrintWriter;
-import java.io.Serial;
-import java.math.BigInteger;
-import java.util.Comparator;
-import java.util.List;
-import java.util.PriorityQueue;
 
 /**
  * Unit test for simple App.

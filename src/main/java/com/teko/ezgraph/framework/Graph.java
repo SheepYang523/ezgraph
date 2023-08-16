@@ -1,4 +1,4 @@
-package com.teko.framework;
+package com.teko.ezgraph.framework;
 
 import java.util.Collection;
 import java.util.LinkedList;

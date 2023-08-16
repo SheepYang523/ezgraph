@@ -1,7 +1,6 @@
-package com.teko.pool;
+package com.teko.ezgraph.pool;
 
-import com.teko.framework.IndexedNode;
-import com.teko.framework.Node;
+import com.teko.ezgraph.framework.IndexedNode;
 
 import java.util.*;
 

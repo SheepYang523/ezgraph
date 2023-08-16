@@ -1,6 +1,6 @@
-package com.teko.pool;
+package com.teko.ezgraph.pool;
 
-import com.teko.structure.LightNode;
+import com.teko.ezgraph.structure.LightNode;
 
 import java.io.PrintWriter;
 import java.io.Serial;
