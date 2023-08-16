@@ -1,5 +1,7 @@
 package com.teko.framework;
 
+import com.teko.pool.AbstractNodeFactory;
+
 import java.io.Serial;
 import java.io.Serializable;
 
@@ -8,6 +10,7 @@ public abstract class AbstractIndexedNode<T extends Number>
     @Serial
     private static final long serialVersionUID = -6749912138869759574L;
     protected T index;
+
 
     @Override
     protected Object clone() throws CloneNotSupportedException {

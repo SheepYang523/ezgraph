@@ -9,6 +9,10 @@ public class LightNode extends AbstractIndexedNode<Integer> {
     @Serial
     private static final long serialVersionUID = -4749038060172279812L;
 
+    public LightNode(Integer index) {
+        this.index = index;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj == null) return false;
@@ -30,12 +34,12 @@ public class LightNode extends AbstractIndexedNode<Integer> {
     }
 
     private int compare(LightNode x, LightNode y) {
-        if (x == null || y == null) throw new NullPointerException();
         return x.index.compareTo(y.index);
     }
 
     @Override
     public int compareTo(AbstractIndexedNode<Integer> o) {
+        if (o == null) throw new NullPointerException();
         if (!(o instanceof LightNode)) throw new ClassCastException();
         return this.compare(this, (LightNode) o);
     }

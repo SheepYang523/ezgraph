@@ -10,6 +10,11 @@ public class IENode<T extends Number, E> extends AbstractIENode<T, E> {
     @Serial
     private static final long serialVersionUID = -6675156481740991022L;
 
+    public IENode(T index, E entity) {
+        this.index = index;
+        this.entity = entity;
+    }
+
     @Override
     public boolean equals(Object obj) {
         return false;
