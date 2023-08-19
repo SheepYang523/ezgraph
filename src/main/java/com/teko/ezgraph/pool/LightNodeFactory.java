@@ -17,7 +17,7 @@ public class LightNodeFactory extends AbstractNodeFactory<LightNode> {
             boolean feedback = this.add(index); // adding success or not.
             if (!feedback) throw new FetchException("Fail while adding a not existing node.");
         }
-        LightNode target = this.pool.get(index);
+        LightNode target = this.get(index);
         if (target == null) {
             throw new FetchException("Target node being gotten is null");
         } else {

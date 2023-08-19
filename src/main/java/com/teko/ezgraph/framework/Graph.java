@@ -1,8 +1,8 @@
 package com.teko.ezgraph.framework;
 
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * @param <T> The type of Graph's node.
@@ -14,13 +14,13 @@ public interface Graph<T> {
      * @param adjacency The adjacency nodes of u that will be in the graph.
      * @return Whether the operation is successful.
      */
-    boolean putNode(T u, List<T> adjacency);
+    boolean putNode(T u, Collection<T> adjacency);
 
     /**
      * @param u The node that needs to be deleted.
      * @return The adjacency nodes of u.
      */
-    LinkedList<T> removeNode(T u);
+    HashSet<T> removeNode(T u);
 
     /**
      * @param u Check if u exists.

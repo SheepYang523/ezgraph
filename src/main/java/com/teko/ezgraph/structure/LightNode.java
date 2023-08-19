@@ -42,4 +42,9 @@ public class LightNode extends AbstractIndexedNode<Integer> {
         if (!(o instanceof LightNode)) throw new ClassCastException();
         return this.compare(this, (LightNode) o);
     }
+
+    @Override
+    public int hashCode() {
+        return this.index.hashCode();
+    }
 }

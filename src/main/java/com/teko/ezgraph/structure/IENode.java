@@ -17,6 +17,12 @@ public class IENode<T extends Number, E> extends AbstractIENode<T, E> {
 
     @Override
     public boolean equals(Object obj) {
+        if (obj == null) return false;
+        if (obj == this) return true;
+        if (obj instanceof IENode) {
+            return ((IENode<?, ?>) obj).getIndex().equals(this.index)
+                    && ((IENode<?, ?>) obj).getEntity().equals(this.entity);
+        }
         return false;
     }
 
@@ -62,5 +68,10 @@ public class IENode<T extends Number, E> extends AbstractIENode<T, E> {
     public int compareTo(AbstractIENode<T, E> o) {
         if (!(o instanceof IENode<T, E>)) throw new ClassCastException();
         return this.compare(this, (IENode<T, E>) o);
+    }
+
+    @Override
+    public int hashCode() {
+        return this.index.hashCode();
     }
 }
